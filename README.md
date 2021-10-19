@@ -3,6 +3,8 @@ ipybus
 
 A widget to communicate with the backend
 
+See below example: ipybus_var front-end can set the hw.value in the backend
+
 Usage
 -----
 
