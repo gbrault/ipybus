@@ -24,5 +24,6 @@ Update `js/package.json` with new npm package version
 git clean -fdx
 cd js
 npm install
+npm adduser
 npm publish
 ```
