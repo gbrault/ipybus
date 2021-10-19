@@ -27,3 +27,10 @@ npm install
 npm adduser
 npm publish
 ```
+
+Install in target
+-----------------
+
+```
+jupyter lab build --dev-build=False --minimize=False
+```
