@@ -1,6 +1,6 @@
 {
   "name": "ipybus",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A widget to communicate with the backend",
   "author": "Gilbert Brault",
   "main": "lib/index.js",

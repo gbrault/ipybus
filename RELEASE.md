@@ -6,6 +6,7 @@ git add the _version.py file and git commit
 python setup.py sdist upload
 python setup.py bdist_wheel upload
 git tag -a X.X.X -m 'comment'
+twine upload dist/*
 
 twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
 ```
