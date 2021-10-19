@@ -11,3 +11,4 @@ ipybus/labextension/
 
 # OS X
 .DS_Store
+.pypirc
