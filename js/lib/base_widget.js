@@ -38,6 +38,8 @@ var BaseModel = widgets.DOMWidgetModel.extend({
 var BaseView = widgets.DOMWidgetView.extend({
     // Defines how the widget gets rendered into the DOM
     render: function() {
+        variable = this.model.get('variable');
+        window[variable]=this.model;
         this.value_changed();
 
         // Observe changes in the value traitlet in Python, and define
@@ -47,9 +49,10 @@ var BaseView = widgets.DOMWidgetView.extend({
     },
 
     value_changed: function() {
-        this.el.textContent = this.model.get('value');
-        variable = this.model.get('variable');
-        window[variable]=this.model;
+        var count = this.model.get('count');
+        count ++;
+        this.model.set('count',count);
+        this.el.textContent = "message("+count+") length="+(this.model.get('value')).length;
     }
 });
 

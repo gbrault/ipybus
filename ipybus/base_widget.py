@@ -1,5 +1,5 @@
 import ipywidgets as widgets
-from traitlets import Unicode
+from traitlets import Unicode, Int
 
 # See js/lib/base_widget.js for the frontend counterpart to this file.
 
@@ -31,3 +31,5 @@ class Base(widgets.DOMWidget):
     value = Unicode('Base').tag(sync=True)
 
     variable = Unicode('ipybus_var').tag(sync=True)
+
+    count =  Int().tag(sync=True)
