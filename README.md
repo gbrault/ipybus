@@ -21,11 +21,11 @@ Usage
     output                                      # see it there
 [5] hw                                          # see the value there
 [6] %%javascript
-    function changeIt(variable){                # function in the front-end
-        variable.set('value',"Nice to have");   # which change the value
+    function changeIt(variable){                // function in the front-end
+        variable.set('value',"Nice to have");   // which change the value
         variable.save();
     }
-    setTimeout(changeIt, 2000, ipybus_var)      # wait 2 secondes to see the change   
+    setTimeout(changeIt, 2000, ipybus_var)      // wait 2 secondes to see the change   
 ```
 
 Installation
