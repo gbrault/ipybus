@@ -26,8 +26,8 @@ var BaseModel = widgets.DOMWidgetModel.extend({
         _view_name : 'BaseView',
         _model_module : 'ipybus',
         _view_module : 'ipybus',
-        _model_module_version : '0.1.0',
-        _view_module_version : '0.1.0',
+        _model_module_version : '0.1.1',
+        _view_module_version : '0.1.1',
         value : 'Base',
         variable: 'ipybus_var'
     })
