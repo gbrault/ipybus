@@ -52,7 +52,8 @@ var BaseView = widgets.DOMWidgetView.extend({
         var count = this.model.get('count');
         count ++;
         this.model.set('count',count);
-        this.el.textContent = "message("+count+") length="+(this.model.get('value')).length;
+        // avoid output change
+        // this.el.textContent = "message("+count+") length="+(this.model.get('value')).length;
     }
 });
 
