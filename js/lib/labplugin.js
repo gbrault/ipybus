@@ -1,9 +1,9 @@
 var plugin = require('./index');
-var IPYBUS = require('@jupyter-widgets/IPYBUS');
+var base = require('@jupyter-widgets/base');
 
 module.exports = {
   id: 'ipybus:plugin',
-  requires: [IPYBUS.IJupyterWidgetRegistry],
+  requires: [base.IJupyterWidgetRegistry],
   activate: function(app, widgets) {
       widgets.registerWidget({
           name: 'ipybus',
