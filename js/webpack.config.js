@@ -45,7 +45,7 @@ module.exports = (env, argv) => {
             module: {
                 rules: rules
             },
-            externals: ['@jupyter-widgets/base']
+            externals: ['@jupyter-widgets/IPYBUS']
         },
         {// Embeddable ipybus bundle
         //
@@ -72,7 +72,7 @@ module.exports = (env, argv) => {
             module: {
                 rules: rules
             },
-            externals: ['@jupyter-widgets/base']
+            externals: ['@jupyter-widgets/IPYBUS']
         }
     ];
 }

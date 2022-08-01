@@ -1,7 +1,7 @@
-var widgets = require('@jupyter-widgets/base');
+var widgets = require('@jupyter-widgets/IPYBUS');
 var _ = require('lodash');
 
-// See base_widget.py for the kernel counterpart to this file.
+// See IPYBUS_widget.py for the kernel counterpart to this file.
 
 
 // Custom Model. Custom widgets models must at least provide default values
@@ -15,27 +15,27 @@ var _ = require('lodash');
 //  - `_model_module`
 //  - `_model_module_version`
 //
-//  when different from the base class.
+//  when different from the IPYBUS class.
 
 // When serialiazing the entire widget state for embedding, only values that
 // differ from the defaults will be specified.
 debugger;
-var BaseModel = widgets.DOMWidgetModel.extend({
+var IPYBUSModel = widgets.DOMWidgetModel.extend({
     defaults: _.extend(widgets.DOMWidgetModel.prototype.defaults(), {
-        _model_name : 'BaseModel',
-        _view_name : 'BaseView',
+        _model_name : 'IPYBUSModel',
+        _view_name : 'IPYBUSView',
         _model_module : 'ipybus',
         _view_module : 'ipybus',
-        _model_module_version : '0.1.2',
-        _view_module_version : '0.1.2',
-        value : 'Base',
+        _model_module_version : '0.1.3',
+        _view_module_version : '0.1.3',
+        value : 'IPYBUS',
         variable: 'ipybus_var'
     })
 });
 
 
 // Custom View. Renders the widget model.
-var BaseView = widgets.DOMWidgetView.extend({
+var IPYBUSView = widgets.DOMWidgetView.extend({
     // Defines how the widget gets rendered into the DOM
     render: function() {
         variable = this.model.get('variable');
@@ -59,6 +59,6 @@ var BaseView = widgets.DOMWidgetView.extend({
 
 
 module.exports = {
-    BaseModel: BaseModel,
-    BaseView: BaseView
+    IPYBUSModel: IPYBUSModel,
+    IPYBUSView: IPYBUSView
 };

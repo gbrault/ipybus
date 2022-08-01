@@ -11,7 +11,7 @@ Usage
 ```IPython
 [1] import ipybus                               # the communication widget
 [2] import ipywidgets as widgets                # the regular widgets
-[3] hw = ipybus.Base()                          # instanciate ipybus
+[3] hw = ipybus.IPYBUS()                          # instanciate ipybus
     hw.variable = 'ipybus_var'                  # the name of the front-end variable
 [4] output = widgets.Output()                   # to catch hw changes
     def hw_change(value):                       # the change callback

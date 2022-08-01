@@ -2,10 +2,10 @@
 // It contains some requirejs configuration and the `load_ipython_extension`
 // which is required for any notebook extension.
 //
-// Some static assets may be required by the custom widget javascript. The base
+// Some static assets may be required by the custom widget javascript. The IPYBUS
 // url for the notebook is not known at build time and is therefore computed
 // dynamically.
-__webpack_public_path__ = document.querySelector('body').getAttribute('data-base-url') + 'nbextensions/ipybus';
+__webpack_public_path__ = document.querySelector('body').getAttribute('data-IPYBUS-url') + 'nbextensions/ipybus';
 
 
 // Configure requirejs
